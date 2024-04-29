@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHO 09/04</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-Br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 09/04</title>
+
+        <style>
+            body {
+                background-color: #cbd1d3;
+                font-family: "Roboto", sans-serif;
+                padding-inline: 36px;
+            }
+
+            * {
+                color: #000000;
+            }
+
+            a {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                color: rgb(15, 112, 36);
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                padding-bottom: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: #ffffff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #b8b8b8;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                gap: 200px;
+                flex-wrap: wrap;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            .bt {
+                padding: 15px;
+                background-color: rgb(94, 94, 94);
+                border: none;
+                border-radius: 10px;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                gap: 4px;
+                font-size: 20px;
+                margin-block: 20px;
+            }
+
+            .inputContainer label {
+                cursor: pointer;
+            }
+
+            .inputContainer input {
+                padding: 5px;
+                color: #000;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><button>ATIVIDADE 12/03</button></a>
+                </li>
+                <li>
+                    <a href="carta.html"><button>ATIVIDADE 19/03</button></a>
+                </li>
+                <li>
+                    <a href="atividade.html"><button>ATIVIDADE 09/04</button></a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section>
+                <h4>EXIBIR MENSAGEM</h4>
+
+                <button id="btMessage" class="bt">Olá Mundo</button>
+            </section>
+
+            <section>
+
+                <h4>SOMAR NÚMEROS</h4>
+
+
+                <div>
+                    <div class="inputContainer">
+                        <label for="n1">número 1</label>
+                        <input type="number" id="n1" value="0">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="n2">número 2</label>
+                        <input type="number" id="n2" value="0">
+                    </div>
+                </div>
+
+                <button class="bt" id="btSomar">somar</button>
+
+                <div class="inputContainer">
+                    <label for="res">Resultado:</label>
+                    <input type="text" id="res" disabled>
+                </div>
+            </section>
+
+            <section>
+
+                <h4>ALTERAR PROPRIEDADES</h4>
+
+                <div class="inputContainer">
+                    <label for="">id</label>
+                    <button class="bt" id="btSection3">vermelho</button>
+                </div>
+
+
+                <div class="inputContainer">
+                    <label for="">classe</label>
+                    <button class="bt btSection3">verde</button>
+                </div>
+
+
+                <div class="inputContainer">
+                    <label for="">name</label>
+                    <button class="bt" name="btSection3">azul</button>
+                </div>
+
+            </section>
+
+            <script src="main.js"></script>
+
+        </main>
+    </body>
+
+    </html>
+</body>
+
+</html>
